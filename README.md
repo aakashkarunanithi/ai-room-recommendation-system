@@ -53,13 +53,21 @@ AWS_SECRET_KEY=
 uvicorn main:app --reload
 
 📂 Project Structure
+
 src/
- ├── controllers/
- ├── services/
- ├── repositories/
- ├── models/
- ├── db/
- └── main.py
+ ├── config/        # Application configuration and environment settings
+ ├── constants/     # Static values and constant definitions
+ ├── controllers/   # API controllers (request/response handling)
+ ├── database/      # Database connection and session management
+ ├── dtos/          # Data Transfer Objects for structured API responses
+ ├── errors/        # Custom exceptions and error handling logic
+ ├── migrations/    # Database migration scripts
+ ├── models/        # Database models and schemas
+ ├── repositories/  # Data access layer (DB operations)
+ ├── routers/       # API route definitions
+ ├── services/      # Business logic layer
+ ├── utilities/     # Helper functions and reusable utilities
+ └── app.py         # Application entry point
 
 🔐 Security
 - Environment variables are stored securely in .env
